@@ -8,4 +8,11 @@ import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 mkdirSync(outDir, { recursive: true });
-writeFileSync(join(outDir, 'entry.png'), readFileSync(new URL('./entry.png', import.meta.url)));
+const bytes = readFileSync(new URL('./entry.png', import.meta.url));
+if (bytes.length === 0) throw new Error('entry.png is empty');
+const outPath = join(outDir, 'entry.png');
+writeFileSync(outPath, bytes);
+// Verify the copy landed intact: a truncated output would score 0, so
+// fail loudly instead of silently handing the grader a broken file.
+const back = readFileSync(outPath);
+if (!back.equals(bytes)) throw new Error('entry.png did not copy intact');
