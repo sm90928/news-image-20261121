@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261121/sm90928/news-image-20261121/rank.svg)](https://make.fun/bounty/news-image-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
 [![reward](https://make.fun/badge/news-image-20261121/sm90928/news-image-20261121/reward.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
 
-A newspaper-style front page summing up Saturday 21 November 2026: COP30 ends in Belém, GTA VI launches, the US midterms aftermath, and markets and the world economy.
+A newspaper-style front page summing up Saturday 21 November 2026: COP31 in overtime in Antalya, GTA VI launches, the US midterms aftermath, and markets and the world economy.
 
 ## Run it
 
